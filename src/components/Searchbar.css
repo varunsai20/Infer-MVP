@@ -4,7 +4,7 @@
 }
 #Library {
   position: relative;
-  padding-left: 87px;
+  padding-left: 54px;
   margin-top: 0px;
   margin-bottom: 0px;
   width: 157px;
@@ -23,13 +23,13 @@
   border-right-width: 0px;
   padding-right: 0px;
   width: 1300px;
-  position: relative;
+  position: fixed;
   padding-left: rem;
   left: 16.05rem;
   height: 80px;
   width: 2070px;
   background-color: #ffffff;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -41,7 +41,7 @@ input {
   width: 202px;
   height: 27px;
 
-  font-family: "Avenir Next LT Pro";
+  font-family: "Avenir Next ";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -62,13 +62,14 @@ search {
 .Search {
   position: relative;
   width: 978px;
-  height: 56px;
+  height: 70px;
   background-color: #f6f6f6;
   border: 0;
   padding-left: 1rem;
   padding-right: 0px;
   margin-right: 20px;
-  border-radius: 8px;
+  border-radius: 15px;
+  margin-top: 16px;
 }
 .form {
   position: relative;

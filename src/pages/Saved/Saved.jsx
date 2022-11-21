@@ -11,6 +11,7 @@ import { useHistory } from "react-router-dom";
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const [savedPosts, setSearchResults] = useState([]);
+
   const history=useHistory('')
   useEffect(() => {
     if(!localStorage.getItem('token')){
@@ -30,7 +31,9 @@ export default function Home() {
       <SavedNav />
       <div className="SavedContent-Display">
         <ListPage savedPosts={savedPosts} />
+        
       </div>
+      
     </>
   );
 }

@@ -30,7 +30,7 @@ const Login = () => {
         })
         .then(result=>{
             console.log(result.data)
-            alert("success")
+            
             // Navigate("/home")
             localStorage.setItem('token',result.data.token)
             history.push('/home')
@@ -50,11 +50,11 @@ const Login = () => {
             <div id="loginform" className="loginform">
                 <div className="frame">
                     <img src="https://www.infersol.com/wp-content/uploads/2020/02/logo.png"/>
-                    <p id="version">Version 1.0</p>
+                    <p id="version"  >Version 1.0</p>
                     <FormHeader/>
-                    <div className="input-fields">
+                    <div className="input-fields" >
                         
-                            <form onSubmit={handleSubmit}>
+                            <form onSubmit={handleSubmit} >
                                 <div className="row">
                                      <input value={email} onChange={handleEmail} type="text" id="email" className="email" placeholder="Email"/>
                                   
@@ -71,14 +71,15 @@ const Login = () => {
                                  </div>        
                             </form>           
             
-                        
+                        <div className="remembrer-links">
                         <div className="remember">
-                            <div className="remember-inside">
+                            {/* <div className="remember-inside"> */}
                                 <input type="checkbox" id="box" className="check-box"  />
-                            </div>
+                            {/* </div> */}
                             <label className="remember-label"for="box">Remember Me</label>
                         </div>
                         <p id="forgot"><a href="">Forgot Password</a></p>
+                        </div>
                                                
                     </div>
                     <label className="copyright">©Copyright Infer Solutions, Inc. All Rights Reserved</label>

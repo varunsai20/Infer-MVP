@@ -1,11 +1,16 @@
 import React from 'react'
 import Navbar from "../../components/Navbar"
 import SearchPage from "./SearchPage"
-function search({searchTerm}){
+import {Redirect} from "react-router-dom"
+function search({searchTerm,googleData}){
     return(
         <>
         <Navbar />
-        <SearchPage searchTerm={searchTerm}/>
+        {
+            searchTerm !==""?(
+        <SearchPage searchTerm={searchTerm} googleData={googleData}/>
+        ):<Redirect to={"/home"} />
+          }
         </>
     )
 }

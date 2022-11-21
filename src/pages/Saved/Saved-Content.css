@@ -1,4 +1,4 @@
-.note {
+.saved-note {
   background: #fcffff;
   margin: 10px;
   margin-bottom: 0px;
@@ -14,15 +14,93 @@
   right: 57px;
   bottom: 42px;
   font-family: "Avenir Next";
+  /* z-index: -1; */
+ 
 }
-.note a {
+.saved-note a {
   font-size: 0.5em;
   margin-bottom: 10px;
   text-decoration: none;
+  display: inline-flex;
+  color: #222222; 
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+/* width: fit-content; */
 }
-.note p {
+/* #add-delete{
+  line-height: 20px;
+} */
+.note-header #add-note-saved{
+  
+  margin:5px 5px 0 30px;
+}
+/* #delete-note{
+  top: 10px;
+} */
+.add-delete{
+  display: none;
+  font-size: 1.5em;
+}
+
+/* .saved-note a:hover{
+
+  background-color: yellowgreen;
+  
+} */
+/* .saved-note a:hover + .add-delete-saved{
+  display: inline-flex;
+  
+} */
+a:hover  {
+  color:rgb(103, 103, 103);
+ 
+}
+a:hover + .add-delete{
+  display: inline-flex;
+  font-size: .7em;
+}
+.add-delete:hover{
+  display: inline-flex;
+  font-size: .7em;
+  cursor: pointer;
+}
+ #delete-note{
+  padding-top: 5px;
+  line-height: 1;
+  font-size: 19px;
+}
+/* .note-header a:hover::after + .add-delete{
+  
+} */
+.add-note-span{
+  margin-left:5px;
+  line-height: 1.3;
+    font-size: 17px;
+
+}
+.delete-note-span{
+  margin-left:5px;
+ 
+}
+
+
+.note-header{
+  /* background-color: blue; */
+  width: 1000px;
+  padding-left: 1px;
+  display: inline-flex;
+}
+.saved-note p {
   font-size: 0.5em;
   margin: 5px 0px;
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #222222;
 }
 .Tags {
   box-sizing: border-box;
@@ -34,25 +112,41 @@
   gap: 8px;
   width: 46px;
   height: 23px;
-
   border: 1px solid #a6a6a6;
   border-radius: 1000px;
   flex: none;
   order: 0;
   flex-grow: 0;
+  
 }
-.TagFrame {
+#Tags{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+}
+.TagFrame-Saved {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding: 0px;
   gap: 16px;
   width: 447px;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 23px;
   left: 0px;
   top: 45px;
 }
 .SavedContent-Display {
-  padding-top: 80px;
+  padding-top: 120px;
+  background-color: #FCFFFF;
+}
+@media screen and (max-width: 935px) {
+  .saved-note{
+    width: 609px;
+    padding-left: 32%;
+    /* font-size: .25em; */
+  }
+  
 }

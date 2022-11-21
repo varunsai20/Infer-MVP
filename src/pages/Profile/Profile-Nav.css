@@ -1,6 +1,6 @@
 #Profile {
   position: relative;
-  padding-left: 87px;
+  padding-left: 37px;
   margin-top: 0px;
   margin-bottom: 0px;
   width: auto;
@@ -21,10 +21,10 @@
   position: fixed;
   padding-left: rem;
   left: 16.05rem;
-  height: 80px;
+  font-weight: 500;
   width: 2070px;
   background-color: #ffffff;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
